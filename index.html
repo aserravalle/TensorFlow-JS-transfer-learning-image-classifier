@@ -1,0 +1,26 @@
+
+<html>
+  <head>
+    <!-- comment -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>    <!-- Load tensorflow -->
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>  <!-- Load Mobilenet Classifier -->
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+  </head>
+  <body>
+
+    <!-- Show the webcam input -->
+    <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+    <div id="console"></div>
+
+    <!-- buttons -->
+    <div>
+    <button id="class-a">Train Ariel</button>
+    <button id="class-b">Train Maia</button>
+    <button id="class-c">Train Zac</button>
+    <button id="class-d">Train Pancho</button>
+    </div>
+
+    <!-- Load index.js after the content of the page -->
+    <script src="index.js"></script>
+  </body>
+</html>
